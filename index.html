@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playable Piano</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!--Đặt đầu: Ưu điểm: Tải script đó trong quá trình tải HTML => nhưng script sẽ ko được thự thi cho đến khi toàn bộ tài liệu HTML được tải xong. 
+        Đảm bbaro rằng script sẽ không chặn (block) việc hiển thị trang web cho đến khi script được tải và thực thi
+        Thực hiện ngay khi toàn bộ HTML đã được tải xong
+        Nhược điểm: Tăng thời gian phản hồi (time to first byte - TTFB) vì trình duyệt phải tải script trước khi hiển thị nội dung HTML nào đó
+    -->
+
+    <!-- Đặt cuối Ưu điểm: Không ảnh hưởng tới quá trình HTML
+        Nhược điểm: Phải đợi tải xong HTML mới tải script => Giảm trải nghiệm người dùng
+    -->
   </head>
   <body>
     <div class="wrapper">
